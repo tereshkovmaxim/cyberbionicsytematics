@@ -1,0 +1,20 @@
+.search.row {
+  display: flex;
+  justify-content: center;
+}
+.search input {
+  width: 100%;
+}
+
+.players.row {
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.col-3 {
+  padding-left: 5px;
+  padding-right: 5px;
+}

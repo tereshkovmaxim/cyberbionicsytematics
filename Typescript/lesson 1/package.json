@@ -1,0 +1,21 @@
+{
+  "name": "pizza",
+  "version": "1.0.0",
+  "description": "js advanced practice",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -w",
+    "lite": "lite-server",
+    "scss": "node-sass -w app/scss -o app/css",
+    "start": "concurrent --kill-others \"npm run scss\" \"npm run tsc\" \"npm run lite\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.6.0",
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.9.2",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {}
+}

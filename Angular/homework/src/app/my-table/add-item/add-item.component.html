@@ -1,0 +1,30 @@
+<mat-expansion-panel>
+
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Add product
+    </mat-panel-title>
+    <mat-panel-description>
+      Type id, name, price and category
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <mat-form-field>
+    <input matInput placeholder="ID" [(ngModel)]="id">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Name" [(ngModel)]="name">
+  </mat-form-field>
+
+  <mat-form-field>
+      <input matInput placeholder="Price" [(ngModel)]="price">
+  </mat-form-field>
+
+  <mat-form-field>
+      <input matInput placeholder="Category" [(ngModel)]="category">
+  </mat-form-field>
+
+  <button mat-button color="primary" (click)="saveData()">Save</button>
+
+</mat-expansion-panel>

@@ -1,0 +1,23 @@
+.cart {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: $size-root*10;
+  top: 0;
+
+  &-items {
+    background-color: darken($color-primary, 0);
+  }
+
+  button {
+    width: 100%;
+  }
+
+  h4 {
+    padding: 0 $size-root*4;
+    font: $size-root*4 Roboto;
+  }
+  P {
+    font: $size-root*2 Roboto;
+  }
+}

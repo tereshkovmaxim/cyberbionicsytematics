@@ -1,0 +1,20 @@
+{
+  "name": "lesson3",
+  "version": "1.0.0",
+  "description": "homework for lesson 3",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -w",
+    "lite": "lite-server",
+    "scss": "node-sass -w app/scss -o app/css",
+    "start": "concurrent \"npm run scss\" \"npm run tsc\" \"npm run lite\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.6.1",
+    "lite-server": "^2.4.0",
+    "node-sass": "^4.9.2",
+    "typescript": "^3.0.1"
+  }
+}

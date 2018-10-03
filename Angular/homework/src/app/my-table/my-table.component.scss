@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+}
+.column {
+  width: 100px;
+  text-align: center;
+}
+.active {
+  // background-color: #ff6666;
+
+  td {
+    border-bottom: 2px solid #ff6666;
+  }
+}
+

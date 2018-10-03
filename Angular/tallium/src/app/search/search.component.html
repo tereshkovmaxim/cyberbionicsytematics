@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="search mt-3 mb-3 row">
+    <form class="form-inline col-6">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" #temp (blur)="search(temp.value)">
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="players row">
+    <div class="col-3 mb-2 flex" *ngFor="let player of playersList">
+      <div class="card">
+        <img class="card-img-top" src="{{player.photo}}" alt="Card image cap" width="100">
+        <div class="card-body">
+          <h5 class="card-title">{{player.name}}</h5>
+          <p class="card-text">Position: {{player.position}}</p>
+          <p class="card-text">Jersey Number: {{player.jerseyNumber}}</p>
+          <p class="card-text">Nationality: {{player.nationality}}</p>
+          <p class="card-text">Market Value: {{player.marketValue}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+

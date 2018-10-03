@@ -1,0 +1,46 @@
+$size-root: 10px;
+$size-width: 100;
+$size-height: 100;
+$color-primary: white;
+$color-second: black;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  height: $size-height + vh;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-primary;
+    opacity: .4;
+    z-index: -1;
+  }
+}
+
+.link {
+  padding: $size-root;
+  border: 1px solid $color-second;
+  font: $size-root*3 Roboto;
+  color: $color-second;
+  z-index: 2;
+  text-decoration: none;
+}
+
+@import "size";
+@import "menu";
+@import "product";
+@import "cart";

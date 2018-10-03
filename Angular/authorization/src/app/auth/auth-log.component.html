@@ -1,0 +1,12 @@
+<form class="auth-form flex login" [formGroup]="formLogin" (submit)=onSubmit()>
+  <p>Log In</p>
+  <div class="input-wrap">
+      <label #loginEmail>Email Address<span class="req">*</span></label>
+      <input type="email" (input)="onChange(loginEmail)" formControlName="login">
+  </div>
+  <div class="input-wrap">
+      <label #loginPass>Set A Password<span class="req">*</span></label>
+      <input type="password" (input)="onChange(loginPass)" formControlName="password">
+  </div>
+  <button>Log In</button>
+</form>

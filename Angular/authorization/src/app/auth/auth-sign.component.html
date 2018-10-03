@@ -1,0 +1,22 @@
+<form class="auth-form flex" [formGroup]="formSign" (ngSubmit)=onSubmit()>
+  <p>Sign Up for Free</p>
+  <div class="name flex">
+    <div class="input-wrap" style="margin-right: 5px;">
+      <label #firstName>First Name<span class="req">*</span></label>
+      <input type="text" (input)="onChange(firstName)" formControlName="firstName">
+    </div>
+    <div class="input-wrap">
+        <label #lastName>Last Name<span class="req">*</span></label>
+        <input type="text" (input)="onChange(lastName)" formControlName="lastName">
+    </div>
+  </div>
+  <div class="input-wrap">
+      <label #email>Email Address<span class="req">*</span></label>
+      <input type="email" (input)="onChange(email)" formControlName="email">
+  </div>
+  <div class="input-wrap">
+      <label #pass>Set A Password<span class="req">*</span></label>
+      <input type="password" (input)="onChange(pass)" formControlName="password">
+  </div>
+  <button>Get Started</button>
+</form>

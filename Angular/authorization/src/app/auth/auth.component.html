@@ -1,0 +1,16 @@
+<div class="wrapper flex">
+  <div class="auth flex">
+    <div class="auth-menu flex">
+      <div class="menu-item">
+        <input type="radio" id="sign-up" name="auth" #sign (click)="onChange()">
+        <label for="sign-up">Sign Up</label>
+      </div>
+      <div class="menu-item">
+        <input type="radio" id="log-in" name="auth" #login (click)="onChange()">
+        <label for="log-in">Log In</label>
+      </div>
+    </div>
+    <app-auth-sign *ngIf="sign.checked"></app-auth-sign>
+    <app-auth-log *ngIf=login.checked></app-auth-log>
+  </div>
+</div>

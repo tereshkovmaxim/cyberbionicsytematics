@@ -1,0 +1,16 @@
+.size {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &-button {
+    width: $size-root*6;
+    height: $size-root*6;
+    margin: $size-root*3;
+    padding: $size-root*3;
+    border-radius: percentage($size-width/2);
+    line-height: $size-root*6;
+    font-size: $size-root*6;
+    text-align: center;
+  }
+}

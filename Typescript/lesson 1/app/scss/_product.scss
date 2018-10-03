@@ -1,0 +1,25 @@
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -40px;
+  z-index: 1;
+
+  &-image {
+    position: absolute;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+.small {
+	transform: scale(.7);
+}
+.medium {
+	transform: scale(1);
+}
+.large {
+	transform: scale(1.3);
+}

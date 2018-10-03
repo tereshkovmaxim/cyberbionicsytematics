@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 2;
+
+  &-button {
+    margin: 0 $size-root;
+  }
+}
+
+.active {
+	background-color: white;
+}
